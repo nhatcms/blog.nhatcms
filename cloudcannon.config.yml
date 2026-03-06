@@ -1,0 +1,37 @@
+paths:
+  static: ''
+  uploads: uploads
+timezone: Asia/Saigon
+markdown:
+  engine: kramdown
+  options:
+    heading_ids: false
+    gfm: false
+    breaks: false
+    typographer: false
+    attributes: true
+    attribute_elements:
+      inline: right
+      block: below
+      tr: none
+      td: none
+      li: right-of-prefix
+    treat_indentation_as_code: true
+_snippets_imports:
+  jekyll: true
+collections_config:
+  pages:
+    path: ''
+    icon: wysiwyg
+  tabs:
+    path: _tabs
+    icon: tabs
+    sort_options:
+      - key: order
+  data:
+    path: _data
+    icon: data_usage
+    disable_url: true
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
