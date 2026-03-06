@@ -1,33 +1,27 @@
 paths:
-  static: ''
   uploads: uploads
-timezone: Asia/Saigon
-markdown:
-  engine: kramdown
-  options:
-    heading_ids: false
-    gfm: false
-    breaks: false
-    typographer: false
-    attributes: true
-    attribute_elements:
-      inline: right
-      block: below
-      tr: none
-      td: none
-      li: right-of-prefix
-    treat_indentation_as_code: true
-_snippets_imports:
-  jekyll: true
+  static: ''
 collections_config:
   pages:
     path: ''
     icon: wysiwyg
+    disable_url: false
+    _inputs:
+      $._snippets_imports:
+        cascade: true
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
   tabs:
     path: _tabs
     icon: tabs
+    disable_url: false
     sort_options:
       - key: order
+        order: ascending
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
   data:
     path: _data
     icon: data_usage
@@ -35,3 +29,31 @@ collections_config:
     disable_add: true
     disable_add_folder: true
     disable_file_actions: true
+_snippets_imports:
+  jekyll: true
+timezone: Asia/Saigon
+markdown:
+  engine: kramdown
+  options:
+    xhtml: false
+    breaks: false
+    linkify: false
+    typographer: false
+    spaced_lists: false
+    sentence_per_line: false
+    gfm: false
+    code_block_fences: '```'
+    escape_snippets_in_code_blocks: false
+    treat_indentation_as_code: true
+    table: false
+    strikethrough: false
+    subscript: false
+    superscript: false
+    heading_ids: false
+    attributes: true
+    attribute_elements:
+      inline: right
+      block: below
+      tr: none
+      td: none
+      li: right-of-prefix
